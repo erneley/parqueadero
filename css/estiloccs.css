@@ -1,0 +1,34 @@
+#central{
+    display:flex;
+}
+#izq{
+    width:30%;
+
+}
+
+#der{
+    width:70%;
+    align-items:center;
+    place-items:inherit;
+    
+}
+body{
+    background-color:blueviolet
+}
+
+img{
+    margin-top: 100px;
+    margin-left: 20%;
+}
+
+.cliente{
+    margin-bottom: 150px;
+    margin-left: 200px;
+    background-color: aqua;
+
+
+}
+
+form{
+    background-color: cornflowerblue;
+}

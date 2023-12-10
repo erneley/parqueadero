@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  
+<head th:replace="/template  ::  head">
+  
+  
+  <body>
+    <header th:replace="/template  :: header"></header>
+    <div class="container mt-4">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr th:each="cliente:${users}">
+            
+            <td th:text="${cliente.id}"></td>
+            <td th:text="${cliente.nitcliente}"></td>
+            <td th:text="${cliente.nombre}"></td>
+            <td th:text="${cliente.direccion}"></td>
+            <td th:text="${cliente.telefono}"></td>
+            <td th:text="${cliente.ciudad}"></td>
+            <td th:text="${cliente.correo}"></td>
+            
+          </tr>
+       
+        </tbody>
+      </table>
+    </div>
+    <footer th:replace="/template  :: footer" ></footer>
+</body>
+</html>

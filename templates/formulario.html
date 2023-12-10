@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="/template  ::  head">
+        
+        <body>
+    
+            <header th:replace="/template  :: header"></header>
+
+            <div class="container col-md-6">
+                <h3>Registro de Clientes</h3>
+                <br>
+                <div class="card">
+                    <div class="card-header bg-dark text-white"></div>
+                        <div class="card-body">
+                    
+    <form class="form-group row " th:action="@{/cliente}" th:object="${usuario}" method="post">
+       
+        <div class="form-group row">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input class="form-control form-control-sm col-md-6" type="text" id="nombre" name="nombre" th:field="*{nombre}" />
+    </div>
+        <br/>
+
+        <label for="correo" class="form-label">Correo Electrónico:</label>
+        <input class="form-control" type="text" id="correo" name="correo" th:field="*{correo}" />
+        <br/>
+
+        
+        <label for="direccion" class="form-label">direccion:</label>
+        <input class="form-control" type="text" id="direccion" name="direccion" th:field="*{direccion}" />
+        <br/>
+
+       
+        <label for="nitcliente" class="form-label">nit:</label>
+        <input class="form-control"  type="text" id="nitcliente" name="nitcliente" th:field="*{nitcliente}" />
+        <br/>
+
+        
+
+        <label for="ciudad" class="form-label">ciudad:</label>
+        <input class="form-control" type="text" id="ciudad" name="ciudad" th:field="*{ciudad}" />
+        <br/>
+
+        <label for="telefono" class="form-label">telefono:</label>
+        <input class="form-control" type="text" id="telefono" name="telefono" th:field="*{telefono}" />
+        <br/>
+
+
+
+
+
+        <input class="btn btn-primary btn-sm" type="submit" value="Guardar" />
+    </form>
+</div>
+</div>
+
+</div>
+
+    <footer th:replace="/template  :: footer" ></footer>
+</body>
+</html>

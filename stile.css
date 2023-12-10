@@ -1,0 +1,79 @@
+body{
+ 
+   background-color: burlywood;
+   
+}
+#central{
+    display:flex;
+}
+#izq{
+    width:20%;
+    border-right: solid;
+   
+   
+    margin-left: 50px;
+
+}
+
+#der{
+   width:75%;
+    align-items:center;
+    place-items:inherit;
+         
+   
+    /*margin-left: 50px;*/
+    background-image: url(./img/par2.jpg);
+
+    
+}
+
+
+img{
+  /*  margin-top: 100px;*/
+   /* margin-left: 20%;*/
+}
+
+.cliente{
+    margin-bottom: 50px;
+    margin-left: 5%;
+   
+    width: 18rem;
+
+
+}
+.contenedor{
+    display: flex;
+    align-items:flex-start;
+   /* background-color: darkslategray;*/
+}
+
+.ladoa{
+    width: 30%;
+    margin: 10px;
+    /*border: solid;*/
+}
+.ladob{
+    width: 60%;
+    margin: 10px;
+    border: solid;
+    color:aliceblue;
+}
+
+.acerca{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 500px;
+    width: auto;
+}
+
+
+#acercajpg{
+
+    height: 200px; width: 50%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+#ingreso{
+    background-color: cornflowerblue;
+}
